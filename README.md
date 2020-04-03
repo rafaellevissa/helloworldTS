@@ -1,6 +1,6 @@
 # helloworldTS
 
-**Objetivo**: Hello world com TypeScript, do básico ao avançado, usando frameworks e lançando as versões em escala de dificuldade. Vou implementar os recursos e avançando com o projeto de Hello World até chegar a uma API.
+**Objetivo**: Hello world com TypeScript, do básico ao avançado, usando frameworks e lançando as versões em escala de dificuldade. Vou implementar os recursos e avançando com o projeto de Hello World até chegar a uma API. Pretendo implementar Deploy Contínuo e containerizar a aplicação do Docker, além de utilizar os proncípios de TDD e DDD.
 
 * Planejamento de estudo:
 
