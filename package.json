@@ -1,0 +1,32 @@
+{
+  "name": "hello",
+  "version": "1.0.0",
+  "description": "hello world",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/hello.ts",
+    "build": "sucrase ./src -d ./dist --transforms typescript,imports",
+    "test": "cross-env NODE_ENV=test jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/rafaellevissa/helloworldTS.git"
+  },
+  "author": "Rafael Levi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafaellevissa/helloworldTS/issues"
+  },
+  "homepage": "https://github.com/rafaellevissa/helloworldTS#readme",
+  "dependencies": {
+    "cross-env": "^7.0.2",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.4",
+    "jest": "^25.2.6",
+    "nodemon": "^2.0.2",
+    "sucrase": "^3.13.0",
+    "typescript": "^3.8.3"
+  }
+}
