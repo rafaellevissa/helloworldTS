@@ -1,12 +1,10 @@
-interface Person {
-    firstName: string;
-    lastName: string;
+import Person from './model/Person'
+import Student from './model/Student'
+
+function hello(person: Person): string {
+    return "Hello, " + person.getFullName();
 }
 
-function hello(person: Person) {
-    return "Hello, " + person.firstName + " " + person.lastName;
-}
-
-let user = { firstName: "Rafael", lastName: "Levi" };
+let user = new Student("Rafael Levi", "B.", "Costa");
 
 console.log(hello(user));

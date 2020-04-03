@@ -46,3 +46,7 @@ Criei também o Dockerfile e o Procfile para containerizar a aplicação e jogar
 * To execute:
 
 `npm run-script start` 
+
+v0.3.0
+
+implementei teste unitário com Jest e instalei o Babel para interpretar os testes com TS. Também separei a interface e criei uma classe implementando. Além disso utilizei Gets e Setters para a classe.
