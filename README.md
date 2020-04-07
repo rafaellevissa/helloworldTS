@@ -1,8 +1,22 @@
 # helloworldTS to API Turmas
 
-**Objetivo**: Hello world com TypeScript, do básico ao avançado, usando frameworks e lançando as versões em escala de dificuldade. Vou implementar os recursos e avançando com o projeto de Hello World até chegar a uma API. Pretendo implementar **Deploy Contínuo** e containerizar a aplicação do **Docker**, além de utilizar os princípios de **TDD** e **DDD**.
+**Objetivo**: 
+Hello world com TypeScript, do básico ao avançado, usando frameworks e lançando as versões em escala de dificuldade. Vou implementar os recursos e avançando com o projeto de Hello World até chegar a uma API. Pretendo implementar **Deploy Contínuo** e containerizar a aplicação do **Docker**, além de utilizar os princípios de **TDD** e **DDD**.
 
-* Planejamento de estudo:
+**Justificativa:** 
+Resolvi fazer o projeto com a melhor qualidade de software que consigo. Reuni tecnologias e metodologias como: JS, TS, Node JS, Git, GitLab CI, OO (Orientação à Objetos de verdade!), SOLID, documentação UML, DDD, TDD, testes automatizados, Devops com Docker, docker-compose, AWS, Heroku, inclui Licença de uso de software, ChangeLog, Contributing open source, API Rest. Usei frameworks e pacotes: Babel, Express, npm, Eslint, Jest, Cross-env, nodemon, sucrase. Para mim é importante reunir esses conceitos de base da tecnologia junto à novas tecnologias emergentes para consolidar o que há de melhor do meio acadêmico à tecnologia de ponta na prática, encaro como um desafio pessoal. Com ajuda do grande Adarlan Teixeira muito obrigado por me ajudar a construir o melhor projeto de Dev da minha vida. 
+
+**Referências:**
+Usei como referência para boas práticas o 
+- the-twelve-factor-app do James Lindenbaum et al. (Heroku)
+- Domain-Driven Design do Eric Evans
+- ChangeLog do Olivier Lacan
+- o Clean Code e SOLID do Robert Cecil Martin 
+- Test Driven Development e Manifesto Ágil do Kent Beck et al. 
+- DEVOPS do Patrick Debois et al. 
+- e mais referências que não consegui citar. 
+
+**Planejamento de estudo:**
 
 O que pretendo entender e construir no projeto TS
 

@@ -1,5 +1,5 @@
-import Student from '../../src/student/Student'
-let user = new Student("Rafael Levi", "B.", "Costa");
+import Person from '../../src/person/Person'
+let user = new Person("Rafael Levi", "B.", "Costa");
 
 describe('Generate Student name',() => {
     it('should generate an Full Name', () => {

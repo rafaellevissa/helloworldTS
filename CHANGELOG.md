@@ -9,20 +9,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.5.0] - 2020-04-07
 ### Added
 - Implementação do docker e docker-compose para containerização da aplicação
-- Gitlab CI: Criei um repositório no Gitlab, foi feito ajustes para fazer a réplica do repositório no GITHUb. Decidi usar o gitlab como padrão e apenas replicar para o github para poder usar o gitlab-CI 
+- Gitlab CI: Criei um repositório no Gitlab, foi feito ajustes para fazer a réplica do repositório no GITHUb. Decidi usar o gitlab como padrão e apenas replicar para o github para poder usar o gitlab-CI . Seguindo conceitos de Devops do Patrick Debois et al., Agile Manifest de Kent Beck et al.
+- Pipeline de teste
+- Usei conceitos de Clean Code e SOLID do Robert C. Martin.
 
 ### Fixed
 - ChangeLog: estudei a documentação do changelog para implementar nesse projeto.
 - Ajustei o arquivo de configuração para o Heroku (procfile)
 - ajustes na licença do software
-- Criei uma pasta para documentação e já adicionei o diagrama de classes feito no software DIA.
+- Criei uma pasta para documentação e já adicionei o diagrama de classes feito no software DIA. Utilizando práticas do UML
 
 ## [0.4.0] - 2020-04-07
 ### Added
-- Transformei o projeto de Hello World para um sistema de controle de turmas de uma escola(API)
-- Criei os arquivos das classes de domínio
+- Transformei o projeto de Hello World para um sistema de controle de turmas de uma escola(API Rest), retornando um Json
+- Criei os arquivos das classes de domínio seguindo orientações de DDD (Eric Evans)
 - Configurei licença
-- Arquivos de configuração docker.
+- Arquivos de configuração docker. (seguindo conceitos de Devops)
 
     `docker build -t hello .`
 
@@ -34,9 +36,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.3.0] - 2020-04-03
 ### Added
-- implementei teste unitário com Jest e instalei o Babel para interpretar os testes com TS. 
-- Também separei a interface e criei uma classe implementando. 
-- Além disso utilizei Gets e Setters para a classe.
+- implementei teste unitário com Jest e instalei o Babel para interpretar os testes com TS. TDD 
+- Também separei a interface e criei uma classe implementando. Utilizando práticas de OO
+- Além disso utilizei Gets e Setters para a classe. Design Pattern
 - To execute: `npm run-script start` ou `npm run-script test`
 
 ## [0.2.0] - 2020-04-03
