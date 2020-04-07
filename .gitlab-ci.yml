@@ -27,6 +27,7 @@ test:
   stage: test
   image: node
   script:
+    - npm install
     - npm test
 
 build:
