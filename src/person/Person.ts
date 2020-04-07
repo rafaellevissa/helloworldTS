@@ -1,11 +1,9 @@
-import Person from './Person'
-
-class Student implements Person{
+class Person {
     private firstName: string;
     private lastName: string;
     private fullName: string;
 
-    constructor(firstName: string, middleInitial: string, lastName: string) {
+    public constructor(firstName: string, middleInitial: string, lastName: string) {
         this.fullName = firstName + " " + middleInitial + " " + lastName;
     }
 
@@ -33,4 +31,4 @@ class Student implements Person{
         return this.fullName;
     }
 }
-export default Student
+export default Person
