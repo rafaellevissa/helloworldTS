@@ -44,6 +44,7 @@ O que pretendo entender e construir no projeto TS
 
 [Documentação do JS](https://devdocs.io/javascript/)
 
-* ChangeLog:
+* [ChangeLog](https://keepachangelog.com/pt-BR/1.0.0/)
 
-link: https://keepachangelog.com/pt-BR/1.0.0/
+
+* [12factor](https://12factor.net/pt_br/)
