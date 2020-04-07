@@ -1,5 +1,7 @@
 * v0.1.0:
 
+    Hello World simples com único arquivo
+    
     - To compile:
 
         `tsc hello.ts`
@@ -27,3 +29,14 @@
     - To execute:
 
     `npm run-script start` ou `npm run-script test`
+
+* v0.4.0
+
+    Transformei o projeto de Hello World para um sistema de controle de turmas de uma escola. Criei os arquivos das classes de domínio e configurei licença, entre outros os arquivos de configuração docker.
+
+    `docker build -t hello .`
+    `docker run -it --rm -p 3000:3000 hello`
+
+    ou 
+
+    `docker-compose up`

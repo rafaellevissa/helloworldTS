@@ -9,6 +9,24 @@ export const databaseConfig = {
       },
       useNullAsDefault: true
     },
+
+    dev: {
+      client: 'mysql',
+      connection: {
+        host: 'mysql',
+        database: 'hello',
+        user: 'hello',
+        password: 'hello'
+      },
+      pool: {
+        min: 2,
+        max: 10
+      },
+      migrations: {
+        directory: './src/database/migrations'
+      }
+    },
+
     staging: {
       client: 'postgresql',
       connection: {

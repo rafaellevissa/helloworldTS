@@ -4,7 +4,8 @@
   "description": "hello world",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/server.ts",
+    "start": "node dist/server.js",
+    "dev": "nodemon src/server.ts",
     "build": "sucrase ./src -d ./dist --transforms typescript,imports",
     "test": "cross-env NODE_ENV=test jest"
   },

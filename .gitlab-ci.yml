@@ -1,0 +1,31 @@
+stages:
+  - pushToGithub
+  - test
+  - build
+  - delpoyToAws
+
+push:
+  stage: pushToGithub
+  image: alpine
+  script:
+    - apk add git
+    - git remote add github git@github.com:rafaellevissa/helloworldTS.git
+    - git push github master
+
+test:
+  stage: test
+  image: node
+  script:
+    - npm test
+
+build:
+  stage: build
+  image: docker
+  script:
+    - docker build -t hello .
+    - 
+
+deploy:
+  stage: delpoyToAws
+  image: docker
+  script:  
