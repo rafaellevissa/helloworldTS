@@ -23,9 +23,9 @@ build:
   image: docker
   script:
     - docker build -t hello .
-    - 
 
 deploy:
   stage: delpoyToAws
   image: docker
   script:  
+    - docker build -t hello .
