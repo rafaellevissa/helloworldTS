@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Usei conceitos de Clean Code e SOLID do Robert C. Martin.
 - AutoBuild com pipeline de build no gitlab-ci usando container com imagem do node. Após a Build uso o registry do gitlab para empacotar a aplicação.
 - AutoDeploy no ambiente da AWS. Criei uma instância t2.micro para fazer deploy automático e testes com infra, configurei chaves SSH no gitlab e na aws e montei o arquivo do pipeline.
+- Acesso ao deploy na AWS `http://3.133.58.237:3000/`
 
 ### Fixed
 - ChangeLog: estudei a documentação do changelog para implementar nesse projeto.
@@ -63,7 +64,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - To execute:
     `node hello.js`
 
-[Unreleased]: 
+[Unreleased]:
+[0.5.0]: https://github.com/rafaellevissa/helloworldTS/releases/tag/v0.5.0
 [0.4.0]: https://github.com/rafaellevissa/helloworldTS/releases/tag/v0.4.0
 [0.3.0]: https://github.com/rafaellevissa/helloworldTS/releases/tag/v0.3.0
 [0.2.0]: https://github.com/rafaellevissa/helloworldTS/releases/tag/v0.2.0
