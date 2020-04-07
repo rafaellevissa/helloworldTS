@@ -17,9 +17,9 @@ push:
     # add ssh key stored in SSH_PRIVATE_KEY variable to the agent store
     - eval $(ssh-agent -s)
     - bash -c 'ssh-add <(echo "$SSH_PRIVATE_KEY_GITHUB")'
-    - cd /
-    - git clone $CI_REPOSITORY_URL app
-    - cd app
+#    - cd /
+#    - git clone $CI_REPOSITORY_URL app
+#    - cd app
     - git remote add github git@github.com:rafaellevissa/helloworldTS.git
     - git push github master
 
@@ -44,13 +44,13 @@ deploy:
   stage: delpoyToAws
   image: alpine
   variables:
-    SERVER: 35.235.76.98
+    SERVER: 3.133.58.237
     PORT: 3000
   script:
     - apk add openssh
     - apk add bash
     - mkdir ~/.ssh
-    - echo "$SSH_KNOWN_HOSTS" >> ~/.ssh/known_hosts
+    - echo "$SSH_KNOWN_HOSTS_AWS" >> ~/.ssh/known_hosts
     - chmod 644 ~/.ssh/known_hosts
     # add ssh key stored in SSH_PRIVATE_KEY variable to the agent store
     - eval $(ssh-agent -s)
