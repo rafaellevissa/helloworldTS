@@ -5,8 +5,8 @@ const HOST = '0.0.0.0';
 
 if (process.env.PORTDOCKER){
     app.listen(+process.env.PORTDOCKER, HOST);
-}else if(process.env.PORT){
+}else if(process.env.PORT){ //Heroku
     app.listen(process.env.PORT);
-}else{
+}else{ //local
     app.listen(PORT, HOST);
 }

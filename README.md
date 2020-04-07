@@ -1,4 +1,4 @@
-# helloworldTS
+# helloworldTS to API Turmas
 
 **Objetivo**: Hello world com TypeScript, do básico ao avançado, usando frameworks e lançando as versões em escala de dificuldade. Vou implementar os recursos e avançando com o projeto de Hello World até chegar a uma API. Pretendo implementar **Deploy Contínuo** e containerizar a aplicação do **Docker**, além de utilizar os princípios de **TDD** e **DDD**.
 
@@ -49,4 +49,6 @@ O que pretendo entender e construir no projeto TS
 
 * [12factor](https://12factor.net/pt_br/)
 
-View app in Heroku: https://hello-ts-rafaellevissa.herokuapp.com/
+* Heroku:
+
+View [app](https://hello-ts-rafaellevissa.herokuapp.com/) in Heroku

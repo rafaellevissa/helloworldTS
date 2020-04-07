@@ -17,9 +17,9 @@ push:
     # add ssh key stored in SSH_PRIVATE_KEY variable to the agent store
     - eval $(ssh-agent -s)
     - bash -c 'ssh-add <(echo "$SSH_PRIVATE_KEY_GITHUB")'
-#    - cd /
-#    - git clone $CI_REPOSITORY_URL app
-#    - cd app
+    - cd /
+    - git clone $CI_REPOSITORY_URL app
+    - cd app
     - git remote add github git@github.com:rafaellevissa/helloworldTS.git
     - git push github master
 
