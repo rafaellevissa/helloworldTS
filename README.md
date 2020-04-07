@@ -48,3 +48,5 @@ O que pretendo entender e construir no projeto TS
 
 
 * [12factor](https://12factor.net/pt_br/)
+
+View app in Heroku: https://hello-ts-rafaellevissa.herokuapp.com/
