@@ -5,6 +5,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- logs manager typescript
+- externalize configuration typescript
+
 
 ## [0.5.0] - 2020-04-07
 ### Added
@@ -12,6 +16,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Gitlab CI: Criei um repositório no Gitlab, foi feito ajustes para fazer a réplica do repositório no GITHUb. Decidi usar o gitlab como padrão e apenas replicar para o github para poder usar o gitlab-CI . Seguindo conceitos de Devops do Patrick Debois et al., Agile Manifest de Kent Beck et al.
 - Pipeline de teste
 - Usei conceitos de Clean Code e SOLID do Robert C. Martin.
+- AutoBuild com pipeline de build no gitlab-ci usando container com imagem do node. Após a Build uso o registry do gitlab para empacotar a aplicação.
+- AutoDeploy no ambiente da AWS. Criei uma instância t2.micro para fazer deploy automático e testes com infra, configurei chaves SSH no gitlab e na aws e montei o arquivo do pipeline.
 
 ### Fixed
 - ChangeLog: estudei a documentação do changelog para implementar nesse projeto.
