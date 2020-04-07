@@ -5,7 +5,7 @@ stages:
   - delpoyToAws
 
 push:
-  stage: pushToGithub2
+  stage: pushToGithub
   image: alpine
   script:
     - apk add openssh
@@ -24,7 +24,7 @@ push:
     - git push github master
 
 test:
-  stage: test2
+  stage: test
   image: node
   script:
     - npm install
