@@ -58,8 +58,7 @@ deploy:
     - bash -c 'ssh-add <(echo "$SSH_PRIVATE_KEY_AWS")'
     # log into Docker registry
     #- ssh deployer@$SERVER "docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN registry.gitlab.com"
-    - echo "$CI_BUILD_TOKEN" >> ~/my_password
-    - ssh deployer@$SERVER "docker login --username gitlab-ci-token --password-stdin < ~/my_password registry.gitlab.com"
+    - echo "$CI_BUILD_TOKEN" | docker login -u gitlab-ci-token --password-stdin registry.gitlab.com"
     # stop container, remove image.
     - ssh deployer@$SERVER "docker container stop ${CI_COMMIT_REF_SLUG}" || true
     - ssh deployer@$SERVER "docker container rm ${CI_COMMIT_REF_SLUG}" || true
