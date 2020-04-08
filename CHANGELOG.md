@@ -17,7 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Pipeline de teste
 - Usei conceitos de Clean Code e SOLID do Robert C. Martin.
 - AutoBuild com pipeline de build no gitlab-ci usando container com imagem do node. Após a Build uso o registry do gitlab para empacotar a aplicação.
-- AutoDeploy no ambiente da AWS. Criei uma instância t2.micro para fazer deploy automático e testes com infra, configurei chaves SSH no gitlab e na aws e montei o arquivo do pipeline.
+- AutoDeploy no ambiente da AWS. Criei uma instância t2.micro para fazer deploy automático e testes com infra, configurei chaves SSH no gitlab e na aws e montei o arquivo do pipeline, criei usuário deployer na instância, instalei o docker, criei chaves ssh, adicionei o usuário deployer no grupo docker.
 - Acesso ao deploy na AWS `http://3.133.58.237:3000/`
 
 ### Fixed

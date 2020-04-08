@@ -66,3 +66,45 @@ O que pretendo entender e construir no projeto TS
 * Heroku:
 
 View [app](https://hello-ts-rafaellevissa.herokuapp.com/) in Heroku
+
+**Implementações:**
+
+1. **Deploy Contínuo**: Fiz configurações de deploy contínuo através do arquivo .gitlab-cy.yml, configurei os jobs: 
+
+  - pushToGithub
+  - test
+  - build
+  - delpoyToAws
+
+Quando eu subo o código para o repositório do GitLab, rodo um pipeline automático para subir uma cópia do projeto para o Github (pushToGithub). Tomei a decisão de usar o sistema de automação de deploy do gitlab por conta da minha experiência apenas com o Gitlab, preciso aprender GitHub Actions.
+
+O segundo job é o de testes, que executa as classes de teste do projeto em ambiente simplificado.
+
+Após os testes, partimos para fazer o processo de build do projeto, que basicamente consiste em instalar as dependências e transpilar o código TypeScript para JavaScript.
+
+Finalmente após esse job, ao final do pipeline temos o deploy no servidor da AWS. Antes desse processo eu configurei uma VM sob serviço EC2 de forma padrão.
+
+Segue ilustração desse processo:
+![Pipeline](./docs/pipeline.png)
+
+2. **Configuração de nuvem**:
+
+Configurado serviço EC2 na AWS, criei uma instância com linux Ubuntu em uma máquina t2.micro
+
+Segue ilustração desse processo:
+![AWS](./docs/aws.png)
+
+
+3. **Heroku**:
+
+Enquanto eu desenvolvo a aplicação e faço os testes em localhost, é necessário em algumas situações fazer testes em um servidor em nuvem, para isso o que prefiro é o Heroku. O Heroku foi utilizado nesse projeto antes de ser feita a configuração do servidor da AWS, por ser mais simples e já faz o monitoramento automático do repositório do Github.
+
+Segue ilustração desse processo:
+![Heroku](./docs/heroku.png)
+
+4. **VScode IDE**:
+
+Utilizei a IDE VsCode pela facilidade de integração com Git, facilidades de estilização, configuração personalizada e facilidade de manipulação para operacionalização do sistema.
+
+Segue ilustração desse processo:
+![VScode](./docs/vscode.png)
