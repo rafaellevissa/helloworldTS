@@ -13,12 +13,14 @@ Usei como referência para boas práticas o
 - ChangeLog do Olivier Lacan
 - o Clean Code e SOLID do Robert Cecil Martin 
 - Test Driven Development e Manifesto Ágil do Kent Beck et al. 
-- DEVOPS do Patrick Debois et al. 
+- Devops do Patrick Debois et al. 
 - e mais referências que não consegui citar. 
+
+obs.: Não utilizei todos os princípios por completo.
 
 **Planejamento de estudo:**
 
-O que pretendo entender e construir no projeto TS
+O que pretendo entender e construir no projeto
 
 [Node JS](https://nodejs.org/en/)
 
@@ -31,6 +33,8 @@ O que pretendo entender e construir no projeto TS
 [Sequelize - ORM ](https://sequelize.org/) ou [Query Builder Knex](http://knexjs.org/)
 
 [Mongoose: Modelador de objetos de MongoDB para node JS](https://mongoosejs.com/)
+
+[Deno: runtime para TS](https://deno.land/)
 
 * Ferramentas:
 
@@ -108,3 +112,4 @@ Utilizei a IDE VsCode pela facilidade de integração com Git, facilidades de es
 
 Segue ilustração desse processo:
 ![VScode](./docs/vscode.png)
+

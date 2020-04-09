@@ -1,5 +1,6 @@
 import { Router } from 'express'
 import { Request, Response } from 'express'
+import PersonController from './person/PersonController'
 
 const routes = Router()
 
@@ -12,5 +13,6 @@ routes.get('/', (req: Request, res: Response) =>
     }
   })
 )
+routes.post('/person', PersonController.create)
 
 export default routes
