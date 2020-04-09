@@ -32,6 +32,8 @@ O que pretendo entender e construir no projeto
 
 [Sequelize - ORM ](https://sequelize.org/) ou [Query Builder Knex](http://knexjs.org/)
 
+[Adonis Framework](https://preview.adonisjs.com/guides/http/introduction)
+
 [Mongoose: Modelador de objetos de MongoDB para node JS](https://mongoosejs.com/)
 
 [Deno: runtime para TS](https://deno.land/)
@@ -113,3 +115,6 @@ Utilizei a IDE VsCode pela facilidade de integração com Git, facilidades de es
 Segue ilustração desse processo:
 ![VScode](./docs/vscode.png)
 
+5. **ORM**:
+
+Tentei utilizar logo de cara o Sequelize com TypeScript mas tive dificuldades com a pobre documentação. Alguns devs me recomendaram o Adonis, que em sua versão 5 já tem suporte nativo a TS, será minha segunda tentativa.
