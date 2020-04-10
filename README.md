@@ -117,4 +117,4 @@ Segue ilustração desse processo:
 
 5. **ORM**:
 
-Tentei utilizar logo de cara o Sequelize com TypeScript mas tive dificuldades com a pobre documentação. Alguns devs me recomendaram o Adonis, que em sua versão 5 já tem suporte nativo a TS, será minha segunda tentativa.
+Tentei utilizar logo de cara o Sequelize com TypeScript mas tive dificuldades com a pobre documentação. Alguns devs me recomendaram o Adonis, que em sua versão 5 já tem suporte nativo a TS, será minha segunda tentativa. Fiz a implementação do AdonisV5, mas ainda tem muita coisa em construção então resolvi trabalhar com ele em um projeto separado para testar apenas. Vou partir para o TypeORM, durante o processo percebi que vou precisar do NestJS junto com o TypeORM

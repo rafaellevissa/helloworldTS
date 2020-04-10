@@ -1,12 +1,14 @@
-import { BaseModel, column } from '@ioc:Adonis/Lucid/Orm'
+import {Entity, PrimaryGeneratedColumn, Column} from "typeorm";
 
-export default class Post extends BaseModel {
-  @column({ isPrimary: true })
+@Entity()
+export default class Person{
+  @PrimaryGeneratedColumn()
   public id: number
 
-  @column()
-  public title: string
+  @Column("text")
+  public name: string
 
-  @column()
-  public body: string
+  constructor(nome:string){
+    this.name = nome;
+  }
 }

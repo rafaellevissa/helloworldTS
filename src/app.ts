@@ -1,6 +1,5 @@
-import express from 'express'
+import * as express from 'express'
 import routes from './routes'
-
 class App {
     public express:express.Application
 
